@@ -1,0 +1,128 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 20px 0;
+	padding: 0;
+	background: #CCCCCC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p, ul, ol, blockquote {
+	font-size: small;
+	line-height: 160%;
+}
+
+a {
+	color: #67823B;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Header */
+
+#header {
+	width: auto;
+	height: 144px;
+	margin: 0 auto;
+	background: url(image/img1.jpg) no-repeat center center;
+	border-top: 10px solid #000000;
+	border-bottom: 10px solid #000000;
+}
+
+#header * {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	padding: 120px 0 0 10px;
+}
+
+#header h2 {
+	float: right;
+	padding: 120px 10px 0 0;
+}
+
+/* Content */
+
+#content {
+	width: 740px;
+	margin: 0 auto;
+	background: url(image/img2.gif);
+	border: 2px solid #CCCCCC;
+}
+
+#colOne {
+	float: left;
+	width: 449px;
+	padding: 20px;
+}
+
+#colTwo {
+	float: right;
+	width: 209px;
+	padding: 20px;
+}
+
+/* Content > ColOne */
+
+/* Content > ColTwo */
+
+#colTwo h2 {
+	font-size: medium;
+	color: #FFFFFF;
+}
+
+#colTwo ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#colTwo li {
+	margin-bottom: 1em;
+	color: #FFFFFF;
+}
+
+#colTwo li li {
+	margin-bottom: 0;
+	padding-left: 1em;
+}
+
+#colTwo a {
+	color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+	width: 740px;
+	margin: 0 auto;
+	background: #000000;
+}
+
+#footer * {
+	color: #FFFFFF;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: x-small;
+}
