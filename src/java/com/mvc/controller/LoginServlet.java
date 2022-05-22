@@ -11,8 +11,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import com.mvc.bean.LoginBean;
 import com.mvc.dao.LoginDao;
- 
+import java.util.logging.Logger; 
 public class LoginServlet extends HttpServlet {
+
+    private static final Logger LOG = Logger.getLogger(LoginServlet.class.getName());
+    
+    
  
     public LoginServlet() // default constructor
     {
@@ -20,9 +24,9 @@ public class LoginServlet extends HttpServlet {
  
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
- 
-        //Here username and password are the names which I have given in the input box in Login.jsp page. Here I am retrieving the values entered by the user and keeping in instance variables for further use.
- 
+        
+        
+        LOG.info("Incomming request>>>>>>>>>>>>>>>>>>");
         String userName = request.getParameter("username");
         String password = request.getParameter("password");
  
@@ -37,6 +41,8 @@ public class LoginServlet extends HttpServlet {
  
         if(userValidate.equals("SUCCESS")) //If function returns success string then user will be rooted to Home page
          {
+            LOG.info("Loging successfull!!!!");
+            LOG.info("Redirecting to home page");
              request.setAttribute("userName", userName); //with setAttribute() you can define a "key" and value pair so that you can get it in future using getAttribute("key")
              request.getRequestDispatcher("/Home.jsp").forward(request, response);//RequestDispatcher is used to send the control to the invoked page.
          }
